@@ -113,5 +113,65 @@ class Exercicios {
 
     }
 
+    fun ex5(){
+
+        var palavra : String = "Devagar"
+        var contadorDeVogal : Int = 0
+        var contadorDeConsoantes : Int = 0
+
+        for(i in 0..palavra.length-1){
+
+            if(palavra[i] == 'a' || palavra[i] == 'e' || palavra[i] == 'i' || palavra[i] == 'o' ||
+                palavra[i] == 'u'){
+
+                contadorDeVogal ++
+
+            } else if(palavra[i] == 'A' || palavra[i] == 'E' || palavra[i] == 'I' || palavra[i] == 'O' ||
+                palavra[i] == 'U'){
+
+                contadorDeVogal ++
+
+            }else {
+
+                contadorDeConsoantes ++
+
+            }
+
+        }
+
+        println("Essa palavra tem $contadorDeVogal Vogais e $contadorDeConsoantes Consoantes")
+
+    }
+
+
+    fun ex6() {
+
+        var contador = 50
+
+        var atual = 0
+        var proximo = 1
+        var soma = atual
+
+
+
+        for (i in 1..contador){
+            println(atual)
+
+            soma = atual + proximo
+
+            atual = proximo
+
+            proximo = soma
+
+        }
+
+
+        
+
+
+
+    }
+
+
 
 }
